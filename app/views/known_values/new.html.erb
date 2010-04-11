@@ -1,0 +1,77 @@
+<div class="action_name"><h2>New variable</h2>
+	<div class="actions">
+		<%= link_to 'Back', known_values_path %>
+	</div>
+</div>
+
+<% form_for(@known_value) do |f| %>
+  <%= f.error_messages %>
+
+<div class="block_full_width">
+	<h3><%= f.label :name %></h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%= f.text_field :name %>
+	</div>
+</div>
+
+<div class="block_full_width">
+	<h3>Name, that will be used in models</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<tr>
+				<td class="half"><%= f.text_field :name_short %></td>
+				<td class="half">
+						<p>This name will be used as name of variable of model.</p>
+						<p>Please, at least 3 symbols length and contain only small latin symbols (or underscore sign).</p>
+				</td>
+			</tr>
+		</table>		 
+	</div>
+</div>
+<div class="block_full_width">
+	<h3>Source of data</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%= f.text_field :source_name %>
+	</div>
+</div>
+<div class="block_full_width">
+	<h3>Unit of measurement</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%= f.text_field :unit_measurement %>
+	</div>
+</div>
+
+<div class="block_full_width">
+	<h3><%= f.label :description %></h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<tr>
+				<td class="half"><%= f.text_area :description %></td>
+				<td class="half">
+					<h3>Syntax</h3>
+					<p>You can use basic html tags.</p>
+					<h3>Example</h3>
+					<p>
+					<code>&lt;p&gt;This parameter ...&lt;/p&gt;</code>
+					</p>
+					<p>&lt;p&gt; tag create a text in new paragraph.</p>
+					<p>
+					<code>&lt;strong&gt;This parameter ...&lt;/strong&gt;</code>
+					</p>
+					<p>&lt;strong&gt; tag make text bold.</p>
+						
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

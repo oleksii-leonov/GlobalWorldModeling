@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map
+	map_file="maps/world.swf"
+	zoom_x="0%"
+	zoom_y="0%"
+	zoom="100%"
+>
+  <areas>
+		<% @values.each do |value| -%>
+			<area title="<%=h @countries_slovarik[value.country_id]['name'] %>" mc_name="<%=h @countries_slovarik[value.country_id]['name_ammap'] %>" value="<%=h value.value %>"></area>
+		<% end %>
+      <area title="borders" mc_name="borders" color="#FFFFFF" balloon="false"></area>
+  </areas>
+</map>

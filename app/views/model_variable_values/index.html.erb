@@ -1,0 +1,26 @@
+<h1>Listing model_variable_values</h1>
+
+<table>
+  <tr>
+    <th>Model variable</th>
+    <th>Country</th>
+    <th>Value</th>
+    <th>Step</th>
+  </tr>
+
+<% @model_variable_values.each do |model_variable_value| %>
+  <tr>
+    <td><%=h model_variable_value.model_variable_id %></td>
+    <td><%=h model_variable_value.country_id %></td>
+    <td><%=h model_variable_value.value %></td>
+    <td><%=h model_variable_value.step %></td>
+    <td><%= link_to 'Show', model_variable_value %></td>
+    <td><%= link_to 'Edit', edit_model_variable_value_path(model_variable_value) %></td>
+    <td><%= link_to 'Destroy', model_variable_value, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New model_variable_value', new_model_variable_value_path %>

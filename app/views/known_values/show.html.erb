@@ -1,0 +1,64 @@
+<div class="action_name"><h2><%=h @known_value.name %></h2>
+	<div class="actions">
+		<%= link_to 'Back', :back %> | 
+		<%= link_to 'List', known_values_path %> | 
+		<%= link_to 'Edit', edit_known_value_path(@known_value) %>
+	</div>
+</div>
+
+<div class="block_full_width">
+	<h3>Description</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%= textilize @known_value.description %>
+	</div>
+</div>
+
+<% if @known_value.fill_formula and !(@known_value.fill_formula == "") %>
+
+<div class="block_full_width">
+	<h3>Formula, on which this data was calculated</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%=h @known_value.fill_formula %>
+	</div>
+</div>
+
+<% end %>
+
+<div class="block_full_width">
+	<h3><%=h @known_value.name %> on map of World</h3>
+	<div class="separator"></div>
+	<div class="container">
+	<%= render_ammap_countries_and_values("/ammap",  countrymap_by_value_data_url(:xml,:id => @known_value), 620, 400, "#FFFFFF", @known_value.id.to_s) %>
+	</div>
+</div>
+
+<% if @known_value.source_name %>
+<div class="block_full_width">
+	<h3>Source of data</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%=h @known_value.source_name %>
+	</div>
+</div>
+<% end %>
+
+
+<div class="block_full_width">
+	<h3>Values</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<% @countries_values.each do |variable| -%>
+			<tr>
+				<td><%= link_to variable["country"].name, variable["country"] %></td>
+				<%= number_humanize(variable["value"],variable["measurement"]) %>
+			</tr>	
+			<% end %>
+		</table>
+	</div>
+</div>
+
+
+

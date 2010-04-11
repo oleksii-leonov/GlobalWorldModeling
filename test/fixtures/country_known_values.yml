@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  country_id: 1
+  known_value_id: 1
+  value: 1.5
+  year: 2010-02-09
+
+two:
+  country_id: 1
+  known_value_id: 1
+  value: 1.5
+  year: 2010-02-09

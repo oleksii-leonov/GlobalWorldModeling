@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeline swf_file="/ammap/ammap.swf" 
+  settings_file="/ammap/timeline/ammap_settings.xml?<%=h rand(100).to_s %>"
+  slider_x="60" 
+  slider_y="!35"
+  slider_width="520"
+  font="Arial"
+  color="#444444"  
+  text_color="#444444"
+  text_size="11"
+  max_date_count="12"
+  date_text_color="#444444"
+  date_x="80%"
+  date_y="70%"
+  date_text_size="70"
+  delay="0.2"
+	loop="true"
+	autoplay="false">
+    
+	<% @dataset.each do |data| -%>
+	<data_set date="<%=h data["date"] %>">
+		<map map_file="maps/world.swf" zoom="86.6071%" zoom_x="7.74%" zoom_y="10.62%">
+			<areas>
+			<% data["countries"].each do |country| -%>
+				<area value="<%=h country["value"] %>" mc_name="<%=h country["mc_name"] %>" title="<%=h country["title"] %>"></area>
+			<% end %>
+			</areas>
+		</map>
+	</data_set>
+	<% end %>
+</timeline>

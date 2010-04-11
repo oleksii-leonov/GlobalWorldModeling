@@ -1,0 +1,12 @@
+<h1>Parsing — <%= controller.action_name %></h1>
+<table>
+	<tr>
+	<th>Name</th>
+	<th>Value</th>
+	</tr>
+<% @countries.each do |item| -%>
+    <tr>
+	<td><%=h item["name"] %></td><td align="right"><%=h item["value"] %></td>
+	</tr>
+<% end %>
+</tablr>

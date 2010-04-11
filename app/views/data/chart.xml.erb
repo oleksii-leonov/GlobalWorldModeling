@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart>
+    <series>
+	    <% @series.each do |item| -%>
+	    <value xid="<%=h item["xid"] %>"><%=h item["value"] %></value>
+	    <% end %>
+	</series>
+	<graphs>    
+		<% @dataset.each do |graph| -%>
+		<graph gid="<%=h graph["gid"] %>">                                                           
+			<% graph["values"].each do |item| -%>
+			<value xid="<%=h item["xid"] %>"><%=h item["value"] %></value>
+			<% end %>
+		</graph>
+		<% end %>
+	</graphs>
+</chart>

@@ -1,0 +1,63 @@
+<div class="action_name"><h2>List of models</h2>
+	<div class="actions">
+		<%= link_to '+ New model', new_model_path %>
+	</div>	
+</div>
+
+<div class="panels">
+
+<% @models.each do |model| %>
+  <div class="modelspanels">
+    <h3><%= link_to truncate(model.name,:length =>28), model %></h3>
+	<div class="separator"></div>
+    <div class="formula">
+		2009—<%=h model.year %><br />
+		<%=h pluralize(model.countries.count,'country') %><br />
+	</div>
+  </div>
+<% end %>
+</div>
+<!--
+<div class="block_full_width">
+        <h3>What I did 18.02.2010?</h3>
+        <div class="separator"></div>
+        <div class="container">
+                        <p>1. Was added <strong>60+ variables from CIA site</strong>. Now you can use about 70 variables.</p>
+						<p>2. Added <strong>links to variables</strong> on country's pages.</p>
+						<p>3. Added patch for <strong>utf-8 support</strong>.</p>
+						<p>4. Added <strong>“description” and “source of data” fields</strong> to models and variables correspondingly.</p>
+						<p>5. Some fixes and improvements.</p>
+        </div>
+</div>
+
+<div class="block_full_width">
+        <h3>What I did 17.02.2010?</h3>
+        <div class="separator"></div>
+        <div class="container">
+                        <p>1. <strong>Improvement of variables file parser.</strong> Now it recognize and can works with \r (CR) line endings (additionally for Unix \n (LF) and Windows \r\n (CRLF)).</p>
+						<p>2. <strong>Correct exception handling for dublicate countries in data file.</strong></p>
+						<p>3. <strong>Nice fill form error notices.</strong></p>
+        </div>
+</div>
+
+<div class="block_full_width">
+        <h3>What I did 16.02.2010?</h3>
+        <div class="separator"></div>
+        <div class="container">
+                        <p>1. <strong>Significant increase speed of model calculation.</strong> Rewrite big part of “calculation core”. Was introduced simple heuristic analyzer of user's model code, that include in “calculation core” only variables user needed. Was found strange and ambiguous Ruby bug :)</p>
+                        <p>2. <strong>Added about 40 countries.</strong> (mostly islands and small regions as Kosovo or West Bank (Israel)).</p>
+
+        </div>
+</div>
+
+<div class="block_full_width">
+	<h3>What I did 15.02.2010?</h3>
+	<div class="separator"></div>
+	<div class="container">
+			<p>1. <strong>Upload data from files in Variables.</strong> Just select file and press button.</p>
+			<p>2. <strong>Summ variables in models.</strong> Now You can get access to summ of variables of all countries in each step. Just add “summ_” prefix to variables name. Example: variable — population, summary_population — summ of populations of each year of all counties, that include in model.</p>
+			<p>3. <strong>Pretty notice block.</strong> It's nice.</li>
+
+	</div>
+</div>
+-->

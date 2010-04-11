@@ -1,0 +1,54 @@
+<div class="action_name"><h2>Creating new model</h2>
+	<div class="actions">
+		<%= link_to 'Back', models_path %>
+	</div>
+</div>
+
+<% form_for(@model,:html => {:name => "model_edit"}) do |f| %>
+  <%= f.error_messages %>
+	<div class="block_full_width">
+		<h3><%= f.label :name %> of model</h3>
+		<div class="separator"></div>
+		<div class="container">
+			<%= f.text_field :name %>
+		</div>
+	</div>
+	<div class="block_full_width">
+		<h3>Up to year</h3>
+		<div class="separator"></div>
+		<div class="container">
+			<%= f.text_field :year %>
+		</div>
+	</div>
+	<div class="block_full_width">
+		<h3><%= f.label :description %> of model</h3>
+		<div class="separator"></div>
+		<div class="container">
+			<%= f.text_area :description %>
+		</div>
+	</div>
+
+	<div class="block_full_width">
+		<h3><%= f.label :formula %></h3>
+		<div class="separator"></div>
+		<div class="container">
+			<table class="block">
+				<tr>
+					<td class="half"><%= f.text_area :formula %></td>
+					<td class="half">
+						<h3>Syntax</h3>
+						<p>You can use Ruby syntax. Short names of all properties available as variables. New values of variables calculates for next year based on result of previous year.</p>
+						<h3>Example</h3>
+						<p>
+						<code>"population" => population * (1 + population_growth_rate/100),<br />"gdp_ppp" => gdp_ppp + gdp_ppp*0.05</code>
+						</p>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

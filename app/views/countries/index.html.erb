@@ -1,0 +1,16 @@
+<div class="action_name"><h2>Countries</h2></div>
+
+<div class="block_full_width">
+	<h3>Countries list</h3>
+	<div class="separator"></div>
+	<div class="container cols4">
+
+	<% @countries.each do |country| %>
+
+    	<%= link_to country.name, country %><br />
+
+	<% end %>
+
+</div>
+
+</div>

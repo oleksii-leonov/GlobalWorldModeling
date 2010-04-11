@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  model_variable_id: 1
+  country_id: 1
+  value: 1.5
+  step: 1
+
+two:
+  model_variable_id: 1
+  country_id: 1
+  value: 1.5
+  step: 1

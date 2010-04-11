@@ -1,0 +1,829 @@
+JP:
+    id: 1
+    name: JAPAN
+    name_ammap: JP
+    
+CN:
+    id: 2
+    name: CHINA
+    name_ammap: CN
+    
+US:
+    id: 3
+    name: USA
+    name_ammap: US
+    
+DE:
+    id: 4
+    name: GERMANY
+    name_ammap: DE
+
+BE:
+    id: 5
+    name: BELGIUM
+    name_ammap: BE
+
+DK:
+    id: 6
+    name: DENMARK
+    name_ammap: DK
+
+GB:
+    id: 7
+    name: UNITED KINGDOM
+    name_ammap: GB
+
+IN:
+    id: 8
+    name: INDIA
+    name_ammap: IN
+
+RU:
+    id: 9
+    name: RUSSIA
+    name_ammap: RU
+
+NL:
+    id: 10
+    name: NETHERLANDS
+    name_ammap: NL
+
+FR:
+    id: 11
+    name: FRANCE
+    name_ammap: FR
+
+AU:
+    id: 12
+    name: AUSTRALIA
+    name_ammap: AU
+
+UA:
+    id: 13
+    name: UKRAINE
+    name_ammap: UA
+
+AF:
+    id: 14
+    name: AFGHANISTAN
+    name_ammap: AF
+AX:
+    id: 15
+    name: ALAND ISLANDS
+    name_ammap: AX
+AL:
+    id: 16
+    name: ALBANIA
+    name_ammap: AL
+DZ:
+    id: 17
+    name: ALGERIA
+    name_ammap: DZ
+AD:
+    id: 18
+    name: ANDORRA
+    name_ammap: AD
+AO:
+    id: 19
+    name: ANGOLA
+    name_ammap: AO
+AI:
+    id: 20
+    name: ANGUILLA
+    name_ammap: AI
+AG:
+    id: 21
+    name: ANTIGUA AND BARBUDA
+    name_ammap: AG
+AR:
+    id: 22
+    name: ARGENTINA
+    name_ammap: AR
+AM:
+    id: 23
+    name: ARMENIA
+    name_ammap: AM
+AW:
+    id: 24
+    name: ARUBA
+    name_ammap: AW
+AT:
+    id: 25
+    name: AUSTRIA
+    name_ammap: AT
+AZ:
+    id: 26
+    name: AZERBAIJAN
+    name_ammap: AZ
+BS:
+    id: 27
+    name: BAHAMAS
+    name_ammap: BS
+BH:
+    id: 28
+    name: BAHRAIN
+    name_ammap: BH
+BD:
+    id: 29
+    name: BANGLADESH
+    name_ammap: BD
+BB:
+    id: 30
+    name: BARBADOS
+    name_ammap: BB
+BY:
+    id: 31
+    name: BELARUS
+    name_ammap: BY
+BZ:
+    id: 32
+    name: BELIZE
+    name_ammap: BZ
+BJ:
+    id: 33
+    name: BENIN
+    name_ammap: BJ
+BM:
+    id: 34
+    name: BERMUDA
+    name_ammap: BM
+BT:
+    id: 35
+    name: BHUTAN
+    name_ammap: BT
+BO:
+    id: 36
+    name: BOLIVIA
+    name_ammap: BO
+BA:
+    id: 37
+    name: BOSNIA AND HERZEGOVINA
+    name_ammap: BA
+BW:
+    id: 38
+    name: BOTSWANA
+    name_ammap: BW
+BR:
+    id: 39
+    name: BRAZIL
+    name_ammap: BR
+BN:
+    id: 40
+    name: BRUNEI DARUSSALAM
+    name_ammap: BN
+BG:
+    id: 41
+    name: BULGARIA
+    name_ammap: BG
+BF:
+    id: 42
+    name: BURKINA FASO
+    name_ammap: BF
+BI:
+    id: 43
+    name: BURUNDI
+    name_ammap: BI
+KH:
+    id: 44
+    name: CAMBODIA
+    name_ammap: KH
+CM:
+    id: 45
+    name: CAMEROON
+    name_ammap: CM
+CA:
+    id: 46
+    name: CANADA
+    name_ammap: CA
+CV:
+    id: 47
+    name: CAPE VERDE
+    name_ammap: CV
+CF:
+    id: 48
+    name: CENTRAL AFRICAN REPUBLIC
+    name_ammap: CF
+TD:
+    id: 49
+    name: CHAD
+    name_ammap: TD
+CL:
+    id: 50
+    name: CHILE
+    name_ammap: CL
+CO:
+    id: 51
+    name: COLOMBIA
+    name_ammap: CO
+KM:
+    id: 52
+    name: COMOROS
+    name_ammap: KM
+CG:
+    id: 53
+    name: REPUBLIC OF CONGO
+    name_ammap: CG
+CD:
+    id: 54
+    name: THE DEMOCRATIC REPUBLIC OF THE CONGO
+    name_ammap: CD
+CR:
+    id: 55
+    name: COSTA RICA
+    name_ammap: CR
+CI:
+    id: 56
+    name: C0TE D'IVOIRE
+    name_ammap: CI
+HR:
+    id: 57
+    name: CROATIA
+    name_ammap: HR
+CU:
+    id: 58
+    name: CUBA
+    name_ammap: CU
+CY:
+    id: 59
+    name: CYPRUS
+    name_ammap: CY
+CZ:
+    id: 60
+    name: CZECH REPUBLIC
+    name_ammap: CZ
+DJ:
+    id: 61
+    name: DJIBOUTI
+    name_ammap: DJ
+DM:
+    id: 62
+    name: DOMINICA
+    name_ammap: DM
+DO:
+    id: 63
+    name: DOMINICAN REPUBLIC
+    name_ammap: DO
+EC:
+    id: 64
+    name: ECUADOR
+    name_ammap: EC
+EG:
+    id: 65
+    name: EGYPT
+    name_ammap: EG
+SV:
+    id: 66
+    name: EL SALVADOR
+    name_ammap: SV
+GQ:
+    id: 67
+    name: EQUATORIAL GUINEA
+    name_ammap: GQ
+ER:
+    id: 68
+    name: ERITREA
+    name_ammap: ER
+EE:
+    id: 69
+    name: ESTONIA
+    name_ammap: EE
+ET:
+    id: 70
+    name: ETHIOPIA
+    name_ammap: ET
+FO:
+    id: 71
+    name: FAEROE ISLANDS
+    name_ammap: FO
+FK:
+    id: 72
+    name: FALKLAND ISLANDS
+    name_ammap: FK
+FJ:
+    id: 73
+    name: FIJI
+    name_ammap: FJ
+FI:
+    id: 74
+    name: FINLAND
+    name_ammap: FI
+GF:
+    id: 75
+    name: FRENCH GUIANA
+    name_ammap: GF
+GA:
+    id: 76
+    name: GABON
+    name_ammap: GA
+GM:
+    id: 77
+    name: GAMBIA, THE
+    name_ammap: GM
+GE:
+    id: 78
+    name: GEORGIA
+    name_ammap: GE
+GH:
+    id: 79
+    name: GHANA
+    name_ammap: GH
+GR:
+    id: 80
+    name: GREECE
+    name_ammap: GR
+GL:
+    id: 81
+    name: GREENLAND
+    name_ammap: GL
+GD:
+    id: 82
+    name: GRENADA
+    name_ammap: GD
+GP:
+    id: 83
+    name: GUADELOUPE
+    name_ammap: GP
+GT:
+    id: 84
+    name: GUATEMALA
+    name_ammap: GT
+GN:
+    id: 85
+    name: GUINEA
+    name_ammap: GN
+GW:
+    id: 86
+    name: GUINEA
+    name_ammap: GW
+GY:
+    id: 87
+    name: GUYANA
+    name_ammap: GY
+HT:
+    id: 88
+    name: HAITI
+    name_ammap: HT
+HN:
+    id: 89
+    name: HONDURAS
+    name_ammap: HN
+HK:
+    id: 90
+    name: HONG KONG
+    name_ammap: HK
+HU:
+    id: 91
+    name: HUNGARY
+    name_ammap: HU
+IS:
+    id: 92
+    name: ICELAND
+    name_ammap: IS
+ID:
+    id: 93
+    name: INDONESIA
+    name_ammap: ID
+IR:
+    id: 94
+    name: IRAN
+    name_ammap: IR
+IQ:
+    id: 95
+    name: IRAQ
+    name_ammap: IQ
+IE:
+    id: 96
+    name: IRELAND
+    name_ammap: IE
+IL:
+    id: 97
+    name: ISRAEL
+    name_ammap: IL
+IT:
+    id: 98
+    name: ITALY
+    name_ammap: IT
+JM:
+    id: 99
+    name: JAMAICA
+    name_ammap: JM
+JO:
+    id: 100
+    name: JORDAN
+    name_ammap: JO
+KZ:
+    id: 101
+    name: KAZAKHSTAN
+    name_ammap: KZ
+KE:
+    id: 102
+    name: KENYA
+    name_ammap: KE
+KP:
+    id: 103
+    name: NORTH KOREA
+    name_ammap: KP
+KR:
+    id: 104
+    name: SOUTH KOREA
+    name_ammap: KR
+KW:
+    id: 105
+    name: KUWAIT
+    name_ammap: KW
+KG:
+    id: 106
+    name: KYRGYZSTAN
+    name_ammap: KG
+LA:
+    id: 107
+    name: LAO PEOPLE'S DEMOCRATIC REPUBLIC
+    name_ammap: LA
+LV:
+    id: 108
+    name: LATVIA
+    name_ammap: LV
+LB:
+    id: 109
+    name: LEBANON
+    name_ammap: LB
+LS:
+    id: 110
+    name: LESOTHO
+    name_ammap: LS
+LR:
+    id: 111
+    name: LIBERIA
+    name_ammap: LR
+LY:
+    id: 112
+    name: LIBYA
+    name_ammap: LY
+LI:
+    id: 113
+    name: LIECHTENSTEIN
+    name_ammap: LI
+LT:
+    id: 114
+    name: LITHUANIA
+    name_ammap: LT
+LU:
+    id: 115
+    name: LUXEMBOURG
+    name_ammap: LU
+MK:
+    id: 116
+    name: MACEDONIA
+    name_ammap: MK
+MG:
+    id: 117
+    name: MADAGASCAR
+    name_ammap: MG
+MW:
+    id: 118
+    name: MALAWI
+    name_ammap: MW
+MY:
+    id: 119
+    name: MALAYSIA
+    name_ammap: MY
+ML:
+    id: 120
+    name: MALI
+    name_ammap: ML
+MT:
+    id: 121
+    name: MALTA
+    name_ammap: MT
+MQ:
+    id: 122
+    name: MARTINIQUE
+    name_ammap: MQ
+MR:
+    id: 123
+    name: MAURITANIA
+    name_ammap: MR
+MU:
+    id: 124
+    name: MAURITIUS
+    name_ammap: MU
+MX:
+    id: 125
+    name: MEXICO
+    name_ammap: MX
+MD:
+    id: 126
+    name: MOLDOVA
+    name_ammap: MD
+MN:
+    id: 127
+    name: MONGOLIA
+    name_ammap: MN
+ME:
+    id: 128
+    name: MONTENEGRO
+    name_ammap: ME
+MS:
+    id: 129
+    name: MONTSERRAT
+    name_ammap: MS
+MA:
+    id: 130
+    name: MOROCCO
+    name_ammap: MA
+MZ:
+    id: 131
+    name: MOZAMBIQUE
+    name_ammap: MZ
+MM:
+    id: 132
+    name: MYANMAR
+    name_ammap: MM
+NA:
+    id: 133
+    name: NAMIBIA
+    name_ammap: NA
+NP:
+    id: 134
+    name: NEPAL
+    name_ammap: NP
+NC:
+    id: 135
+    name: NEW CALEDONIA
+    name_ammap: NC
+NZ:
+    id: 136
+    name: NEW ZEALAND
+    name_ammap: NZ
+NI:
+    id: 137
+    name: NICARAGUA
+    name_ammap: NI
+NE:
+    id: 138
+    name: NIGER
+    name_ammap: NE
+NG:
+    id: 139
+    name: NIGERIA
+    name_ammap: NG
+NO:
+    id: 140
+    name: NORWAY
+    name_ammap: NO
+OM:
+    id: 141
+    name: OMAN
+    name_ammap: OM
+PK:
+    id: 142
+    name: PAKISTAN
+    name_ammap: PK
+PW:
+    id: 143
+    name: PALAU
+    name_ammap: PW
+PS:
+    id: 144
+    name: PALESTINIAN TERRITORIES
+    name_ammap: PS
+PA:
+    id: 145
+    name: PANAMA
+    name_ammap: PA
+PG:
+    id: 146
+    name: PAPUA NEW GUINEA
+    name_ammap: PG
+PY:
+    id: 147
+    name: PARAGUAY
+    name_ammap: PY
+PE:
+    id: 148
+    name: PERU
+    name_ammap: PE
+PH:
+    id: 149
+    name: PHILIPPINES
+    name_ammap: PH
+PL:
+    id: 150
+    name: POLAND
+    name_ammap: PL
+PT:
+    id: 151
+    name: PORTUGAL
+    name_ammap: PT
+PR:
+    id: 152
+    name: PUERTO RICO
+    name_ammap: PR
+QA:
+    id: 153
+    name: QATAR
+    name_ammap: QA
+RE:
+    id: 154
+    name: REUNION
+    name_ammap: RE
+RO:
+    id: 155
+    name: ROMANIA
+    name_ammap: RO
+RW:
+    id: 156
+    name: RWANDA
+    name_ammap: RW
+KN:
+    id: 157
+    name: SAINT KITTS AND NEVIS
+    name_ammap: KN
+LC:
+    id: 158
+    name: SAINT LUCIA
+    name_ammap: LC
+WS:
+    id: 159
+    name: SAMOA
+    name_ammap: WS
+ST:
+    id: 160
+    name: SAO TOME AND PRINCIPE
+    name_ammap: ST
+SA:
+    id: 161
+    name: SAUDI ARABIA
+    name_ammap: SA
+SN:
+    id: 162
+    name: SENEGAL
+    name_ammap: SN
+RS:
+    id: 163
+    name: SERBIA
+    name_ammap: RS
+SL:
+    id: 164
+    name: SIERRA LEONE
+    name_ammap: SL
+SG:
+    id: 165
+    name: SINGAPORE
+    name_ammap: SG
+SK:
+    id: 166
+    name: SLOVAKIA
+    name_ammap: SK
+SI:
+    id: 167
+    name: SLOVENIA
+    name_ammap: SI
+SB:
+    id: 168
+    name: SOLOMON ISLANDS
+    name_ammap: SB
+SO:
+    id: 169
+    name: SOMALIA
+    name_ammap: SO
+ZA:
+    id: 170
+    name: SOUTH AFRICA
+    name_ammap: ZA
+GS:
+    id: 171
+    name: SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS
+    name_ammap: GS
+ES:
+    id: 172
+    name: SPAIN
+    name_ammap: ES
+LK:
+    id: 173
+    name: SRI LANKA
+    name_ammap: LK
+SD:
+    id: 174
+    name: SUDAN
+    name_ammap: SD
+SR:
+    id: 175
+    name: SURINAME
+    name_ammap: SR
+SJ:
+    id: 176
+    name: SVALBARD AND JAN MAYEN
+    name_ammap: SJ
+SZ:
+    id: 177
+    name: SWAZILAND
+    name_ammap: SZ
+SE:
+    id: 178
+    name: SWEDEN
+    name_ammap: SE
+CH:
+    id: 179
+    name: SWITZERLAND
+    name_ammap: CH
+SY:
+    id: 180
+    name: SYRIAN ARAB REPUBLIC
+    name_ammap: SY
+TW:
+    id: 181
+    name: TAIWAN
+    name_ammap: TW
+TJ:
+    id: 182
+    name: TAJIKISTAN
+    name_ammap: TJ
+TZ:
+    id: 183
+    name: TANZANIA
+    name_ammap: TZ
+TH:
+    id: 184
+    name: THAILAND
+    name_ammap: TH
+TL:
+    id: 185
+    name: TIMOR
+    name_ammap: TL
+TG:
+    id: 186
+    name: TOGO
+    name_ammap: TG
+TO:
+    id: 187
+    name: TONGA
+    name_ammap: TO
+TT:
+    id: 188
+    name: TRINIDAD AND TOBAGO
+    name_ammap: TT
+TN:
+    id: 189
+    name: TUNISIA
+    name_ammap: TN
+TR:
+    id: 190
+    name: TURKEY
+    name_ammap: TR
+TM:
+    id: 191
+    name: TURKMENISTAN
+    name_ammap: TM
+TC:
+    id: 192
+    name: TURKS AND CAICOS ISLANDS
+    name_ammap: TC
+UG:
+    id: 193
+    name: UGANDA
+    name_ammap: UG
+AE:
+    id: 194
+    name: UNITED ARAB EMIRATES
+    name_ammap: AE
+UY:
+    id: 195
+    name: URUGUAY
+    name_ammap: UY
+UZ:
+    id: 196
+    name: UZBEKISTAN
+    name_ammap: UZ
+VU:
+    id: 197
+    name: VANUATU
+    name_ammap: VU
+VE:
+    id: 198
+    name: VENEZUELA
+    name_ammap: VE
+VN:
+    id: 199
+    name: VIET NAM
+    name_ammap: VN
+VG:
+    id: 200
+    name: VIRGIN ISLANDS, BRITISH
+    name_ammap: VG
+EH:
+    id: 201
+    name: WESTERN SAHARA
+    name_ammap: EH
+YE:
+    id: 202
+    name: YEMEN
+    name_ammap: YE
+ZM:
+    id: 203
+    name: ZAMBIA
+    name_ammap: ZM
+ZW:
+    id: 204
+    name: ZIMBABWE
+    name_ammap: ZW

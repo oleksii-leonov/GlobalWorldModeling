@@ -1,0 +1,19 @@
+GDP:
+    id: 1
+    name: Gross domestic product
+    name_short: GDP
+
+Import:
+    id: 2
+    name: Import
+    name_short: IMP
+
+Export:
+    id: 3
+    name: Export
+    name_short: EXP
+
+Population:
+    id: 4
+    name: Population
+    name_short: POP

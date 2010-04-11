@@ -1,0 +1,6 @@
+.DS_Store
+log/*.log
+tmp/**/*
+config/database.yml
+/public/amline/amcharts_key.txt
+/public/ammap/ammap_key.txt

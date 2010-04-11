@@ -1,0 +1,56 @@
+<div class="action_name"><h2><%=h @model.name %> (2009—<%=h @model.year %> years)</h2>
+	<div class="actions">
+		<%= link_to 'Back', models_path %> | 
+		<%= link_to 'Edit', edit_model_path(@model) %>
+	</div>
+</div>
+
+<% if @model.description %>
+<div class="block_full_width">
+	<h3>Description</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%=h @model.description %>
+	</div>
+</div>
+<% end %>
+
+<div class="block_full_width">
+	<h3>Formula</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%=h @model.formula %>
+	</div>
+</div>
+
+<% @model.known_values.each do |known_value|%>
+	<div class="block_full_width">
+		<h3>Map of <%=h known_value.name %></h3>
+		<div class="separator"></div>
+		<div class="container">
+		<%= render_timelinemap("/ammap",  map_data_url(:xml,:id => @model, :param => known_value.id), 620, 400, "#FFFFFF", known_value.id.to_s) %>
+		</div>
+	</div>
+
+<div class="block_full_width">
+	<h3>Graph of <%=h known_value.name %> (summary)</h3>
+	<div class="separator"></div>
+	<div class="container">
+	<%= render_amline("/amline",  chart_data_url(:xml, :id => @model, :param => known_value.id), chartsettings_data_url(:xml, :id => @model, :param => known_value.id), 620, 400, "#FFFFFF", known_value.id.to_s) %>
+	</div>
+</div>
+<% end %>
+
+
+
+<div class="block_full_width">
+	<h3>Countries</h3>
+	<div class="separator"></div>
+	<div class="container cols4">
+		<div class="country_list">
+		<% @model.countries.each do |country| -%>
+		    <%= link_to country.name, :controller => "countries", :action => "show", :id => country.id %><br />
+		<% end %>
+		</div>
+	</div>
+</div>

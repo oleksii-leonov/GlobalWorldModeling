@@ -1,0 +1,28 @@
+<div class="action_name"><h2><%=h @country.name %></h2>
+	<div class="actions">
+		<%= link_to 'Back', :back %> | 
+		<%= link_to 'List', countries_path %>
+	</div>
+</div>
+<div class="block_full_width">
+	<h3><%=h @country.name %> on map of World</h3>
+	<div class="separator"></div>
+	<div class="container">
+	<%= render_ammap("/ammap",  countrymap_data_url(:xml,:id => @country), 620, 400, "#FFFFFF", @country.id.to_s) %>
+	</div>
+</div>
+
+<div class="block_full_width">
+	<h3>Variables</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<% @country_variables.each do |variable| -%>
+			<tr>
+				<td><%= link_to variable["name"], variable["known_value"] %></td>
+				<%= number_humanize(variable["value"], variable["measurement"]) %>
+			</tr>	
+			<% end %>
+		</table>
+	</div>
+</div>

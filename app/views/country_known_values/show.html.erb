@@ -1,0 +1,23 @@
+<p>
+  <b>Country:</b>
+  <%=h @country_known_value.country_id %>
+</p>
+
+<p>
+  <b>Known value:</b>
+  <%=h @country_known_value.known_value_id %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @country_known_value.value %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%=h @country_known_value.year %>
+</p>
+
+
+<%= link_to 'Edit', edit_country_known_value_path(@country_known_value) %> |
+<%= link_to 'Back', country_known_values_path %>

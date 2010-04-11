@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  name_short: MyString
+  name_ammap: MyString
+  formula: MyText
+
+two:
+  name: MyString
+  name_short: MyString
+  name_ammap: MyString
+  formula: MyText

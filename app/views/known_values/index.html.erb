@@ -1,0 +1,22 @@
+<div class="action_name"><h2>Variables</h2>
+	<div class="actions">
+		<%= link_to '+ New variable', new_known_value_path %>
+	</div>
+</div>
+
+<div class="block_full_width">
+	<h3>Variables</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<% @known_values.each do |known_value| -%>
+			<tr>
+				<td><%= link_to known_value.name, known_value %></td>
+				<td><%=h known_value.name_short %></td>
+				<td><%=h known_value.unit_measurement %></td>
+			</tr>	
+			<% end %>
+		</table>
+	</div>
+</div>
+

@@ -1,0 +1,23 @@
+<p>
+  <b>Model variable:</b>
+  <%=h @model_variable_value.model_variable_id %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%=h @model_variable_value.country_id %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @model_variable_value.value %>
+</p>
+
+<p>
+  <b>Step:</b>
+  <%=h @model_variable_value.step %>
+</p>
+
+
+<%= link_to 'Edit', edit_model_variable_value_path(@model_variable_value) %> |
+<%= link_to 'Back', model_variable_values_path %>

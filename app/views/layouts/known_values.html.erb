@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Variables</title>
+  
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag :defaults %>
+
+</head>
+
+<body>
+<div id="container">
+    <!-- верхнее меню-->
+    <ul class="menu">
+        <li class="l1"><a href="/models">Models</a></li>
+        <li class="l2"><a href="/countries">Countries</a></li>
+		<li class="l3"><a href="/known_values">Variables</a></li>
+    </ul>
+    <!-- .верхнее меню-->
+    <!-- основной блок с закругленными уголками-->
+    <div class="bubble">
+    	<!-- Блок для заголовка -->
+        <div class="rectangle c3">
+            <h2>Variables</h2>
+        </div>
+        <div class="triangle-l c3l"></div><!-- Левый уголок под заголовком -->
+        <!--<div class="triangle-r"></div>--><!-- Правый уголок под заголовком -->
+        <div class="info"><!-- Основной контент -->
+			<% if flash[:notice] %>
+				<div class="notice"><%= flash[:notice] %></div>
+			<% end %>
+
+			<%= yield %>
+
+        </div>
+    </div>
+    <!-- .основной блок с закругленными уголками-->
+</div>
+<div class="copy">&copy; 2009—10 Aleksej Leonov </div>
+</body>
+</html>

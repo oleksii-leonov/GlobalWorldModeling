@@ -1,0 +1,28 @@
+<h1>Editing model_variable_value</h1>
+
+<% form_for(@model_variable_value) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :model_variable_id %><br />
+    <%= f.text_field :model_variable_id %>
+  </p>
+  <p>
+    <%= f.label :country_id %><br />
+    <%= f.text_field :country_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :step %><br />
+    <%= f.text_field :step %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @model_variable_value %> |
+<%= link_to 'Back', model_variable_values_path %>

@@ -1,0 +1,26 @@
+<h1>Listing country_known_values</h1>
+
+<table>
+  <tr>
+    <th>Country</th>
+    <th>Known value</th>
+    <th>Value</th>
+    <th>Year</th>
+  </tr>
+
+<% @country_known_values.each do |country_known_value| %>
+  <tr>
+    <td><%=h country_known_value.country_id %></td>
+    <td><%=h country_known_value.known_value_id %></td>
+    <td><%=h country_known_value.value %></td>
+    <td><%=h country_known_value.year %></td>
+    <td><%= link_to 'Show', country_known_value %></td>
+    <td><%= link_to 'Edit', edit_country_known_value_path(country_known_value) %></td>
+    <td><%= link_to 'Destroy', country_known_value, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New country_known_value', new_country_known_value_path %>

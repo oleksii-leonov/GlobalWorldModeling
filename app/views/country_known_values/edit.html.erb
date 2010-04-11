@@ -1,0 +1,28 @@
+<h1>Editing country_known_value</h1>
+
+<% form_for(@country_known_value) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :country_id %><br />
+    <%= f.text_field :country_id %>
+  </p>
+  <p>
+    <%= f.label :known_value_id %><br />
+    <%= f.text_field :known_value_id %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :year %><br />
+    <%= f.date_select :year %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @country_known_value %> |
+<%= link_to 'Back', country_known_values_path %>

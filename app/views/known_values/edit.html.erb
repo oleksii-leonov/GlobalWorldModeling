@@ -1,0 +1,126 @@
+<div class="action_name"><h2>Edit — <%=h @known_value.name %></h2>
+	<div class="actions">
+		<%= link_to 'Show', @known_value %> |
+		<%= link_to 'Back', :back %> | 
+		<%= link_to 'Destroy', @known_value, :confirm => 'Are you sure?', :method => :delete %>
+	</div>
+</div>
+
+<% form_for(@known_value, :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+
+<div class="block_full_width">
+	<h3><%= f.label :name %></h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%= f.text_field :name %>
+	</div>
+</div>
+
+<div class="block_full_width">
+	<h3>Name, that will be used in models</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<tr>
+				<td class="half"><%= f.text_field :name_short %></td>
+				<td class="half">
+						<p>This name will be used as name of variable of model.</p>
+						<p>Please, at least 3 symbols length and contain only small latin symbols (or underscore sign).</p>
+				</td>
+			</tr>
+		</table>		 
+	</div>
+</div>
+
+<div class="block_full_width">
+	<h3>Upload data from file</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<tr>
+				<td class="half"><%= f.file_field :uploadfile %></td>
+				<td class="half">
+						<p>You can upload data from file.</p>
+						<p>Format of file — on each string have to be country name and value.</p>
+						<h3>Example</h3>
+						<p>
+						<code>Ukraine&nbsp;&nbsp;3,34%<br />
+							  Urugvay&nbsp;&nbsp;-2,45%</code>
+						</p>
+				</td>
+			</tr>
+		</table>		 
+	</div>
+</div>
+<!--
+<div class="block_full_width">
+	<h3>Formula, if You wish to calculate values</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<tr>
+				<td class="half"><%= f.text_area :fill_formula %></td>
+				<td class="half">
+					<h3>What is this?</h3>
+					<p>If You want to calculate this data, bases on available data, just write formula how to do it. Else, if You want to load this data from from file, simply left this field blank.</p>
+					<h3>Syntax</h3>
+					<p>You can use Ruby syntax. Short names of all properties available as variables. </p>
+					<h3>Example</h3>
+					<p>
+					<code>if total_area > 0 then population/total_area else 0 end</code>
+					</p>
+					
+				</td>
+			</tr>
+		</table>		 
+	</div>
+</div>
+-->
+
+<div class="block_full_width">
+	<h3>Source of data</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%= f.text_field :source_name %>
+	</div>
+</div>
+<div class="block_full_width">
+	<h3>Unit of measurement</h3>
+	<div class="separator"></div>
+	<div class="container">
+		<%= f.text_field :unit_measurement %>
+	</div>
+</div>
+
+<div class="block_full_width">
+	<h3><%= f.label :description %></h3>
+	<div class="separator"></div>
+	<div class="container">
+		<table class="block">
+			<tr>
+				<td class="half"><%= f.text_area :description %></td>
+				<td class="half">
+					<h3>Syntax</h3>
+					<p>You can use basic html tags.</p>
+					<h3>Example</h3>
+					<p>
+					<code>&lt;p&gt;This parameter ...&lt;/p&gt;</code>
+					</p>
+					<p>&lt;p&gt; tag create a text in new paragraph.</p>
+					<p>
+					<code>&lt;strong&gt;This parameter ...&lt;/strong&gt;</code>
+					</p>
+					<p>&lt;strong&gt; tag make text bold.</p>
+						
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
