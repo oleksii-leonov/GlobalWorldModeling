@@ -1,0 +1,24 @@
+18.02.2010
+
+1. Was added 60+ variables from CIA site. Now you can use about 70 variables.
+2. Added links to variables</strong> on country's pages.
+3. Added patch for utf-8 support.
+4. Added “description” and “source of data” fields to models and variables correspondingly.
+5. Some fixes and improvements.
+
+17.02.2010
+
+1. Improvement of variables file parser. Now it recognize and can works with \r (CR) line endings (additionally for Unix \n (LF) and Windows \r\n (CRLF)).
+2. Correct exception handling for dublicate countries in data file.
+3. Nice fill form error notices.
+
+16.02.2010
+
+1. Significant increase speed of model calculation. Rewrite big part of “calculation core”. Was introduced simple heuristic analyzer of user's model code, that include in “calculation core” only variables user needed.
+2. Added about 40 countries. (mostly islands and small regions as Kosovo or West Bank (Israel)).
+
+15.02.2010
+
+1. Upload data from files in Variables.</strong> Just select file and press button.
+2. Summ variables in models.</strong> Now You can get access to summ of variables of all countries in each step. Just add “summ_” prefix to variables name. Example: variable — population, summary_population — summ of populations of each year of all counties, that include in model.
+3.Pretty notice block. It's nice.
