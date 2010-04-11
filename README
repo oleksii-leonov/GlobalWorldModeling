@@ -4,11 +4,15 @@ This project is part of my MsC and future PhD work.
 
 It's web-service, that allow user to write his own models of system dynamics for countries, and make forecasting of world development, based on user's model.
 
-Writing on Ruby on Rails 2.3.5 (I use Ruby 1.9).
+Alpha-version: http://model.wdc.org.ua:3000/.
+
+IMPORTANT: View site only in Chrome, Firefox 3.6 of Safari 4 browsers (Opera 10 is Ok, but some things won't display right). I used CSS3 features, and didn't work to make cross-browser site. Also I prefer Macs for smooth and perfect fonts.
 
 You can play with alpha-version on http://model.wdc.org.ua:3000/. There are already some simple global models (population growth, oil consumption, etc.) with forecasting for 50–100 years and pretty interactive maps and graphics.
 Also, there are about 70 variables for each country (data taken from CIA FactBook — https://www.cia.gov/library/publications/the-world-factbook/).
 You can use this variables in models, or just watch them on heat maps.
+
+Writing on Ruby on Rails 2.3.5 (I use Ruby 1.9).
 
 There are no documentation or manual now. I'll try to make it in nearest future.
 
