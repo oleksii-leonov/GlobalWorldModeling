@@ -1,7 +1,11 @@
+<%- content_for :title do -%>Variables<%- end -%>
+
 <div class="action_name"><h2>Variables</h2>
+	<% if user_signed_in? %>
 	<div class="actions">
 		<%= link_to '+ New variable', new_known_value_path %>
 	</div>
+	<% end %>
 </div>
 
 <div class="block_full_width">

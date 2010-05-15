@@ -1,4 +1,6 @@
 class CountriesController < ApplicationController
+  load_and_authorize_resource
+  
   # GET /countries
   # GET /countries.xml
   def index

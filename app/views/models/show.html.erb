@@ -1,7 +1,11 @@
+<%- content_for :title do -%>Models<%- end -%>
+
 <div class="action_name"><h2><%=h @model.name %> (2009—<%=h @model.year %> years)</h2>
 	<div class="actions">
-		<%= link_to 'Back', models_path %> | 
-		<%= link_to 'Edit', edit_model_path(@model) %>
+		<%= link_to 'Back', models_path %>
+		<% if user_signed_in? && current_user == @model.user %> | 
+			<%= link_to 'Edit', edit_model_path(@model) %>
+		<% end%>
 	</div>
 </div>
 
@@ -10,7 +14,7 @@
 	<h3>Description</h3>
 	<div class="separator"></div>
 	<div class="container">
-		<%=h @model.description %>
+		<%= simple_format @model.description %>
 	</div>
 </div>
 <% end %>
@@ -19,13 +23,13 @@
 	<h3>Formula</h3>
 	<div class="separator"></div>
 	<div class="container">
-		<%=h @model.formula %>
+		<%= simple_format(@model.formula) %>
 	</div>
 </div>
 
 <% @model.known_values.each do |known_value|%>
 	<div class="block_full_width">
-		<h3>Map of <%=h known_value.name %></h3>
+		<h3>Map of <%=h known_value.name %> (in <%=h known_value.unit_measurement %>)</h3>
 		<div class="separator"></div>
 		<div class="container">
 		<%= render_timelinemap("/ammap",  map_data_url(:xml,:id => @model, :param => known_value.id), 620, 400, "#FFFFFF", known_value.id.to_s) %>
@@ -33,7 +37,7 @@
 	</div>
 
 <div class="block_full_width">
-	<h3>Graph of <%=h known_value.name %> (summary)</h3>
+	<h3>Graph of <%=h known_value.name %> (summary) (in <%=h known_value.unit_measurement %>)</h3>
 	<div class="separator"></div>
 	<div class="container">
 	<%= render_amline("/amline",  chart_data_url(:xml, :id => @model, :param => known_value.id), chartsettings_data_url(:xml, :id => @model, :param => known_value.id), 620, 400, "#FFFFFF", known_value.id.to_s) %>

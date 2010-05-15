@@ -1,7 +1,11 @@
+<%- content_for :title do -%>Models<%- end -%>
+
 <div class="action_name"><h2>List of models</h2>
+	<% if user_signed_in? %>
 	<div class="actions">
 		<%= link_to '+ New model', new_model_path %>
-	</div>	
+	</div>
+	<% end %>
 </div>
 
 <div class="panels">
@@ -11,11 +15,24 @@
     <h3><%= link_to truncate(model.name,:length =>28), model %></h3>
 	<div class="separator"></div>
     <div class="formula">
-		2009—<%=h model.year %><br />
+		2009–<%=h model.year %><br />
 		<%=h pluralize(model.countries.count,'country') %><br />
+		<small>model by
+			<% if model.user == current_user %>
+				You
+			<% else %>
+				<%=h model.user.email.split(/\@/)[0] %>
+			<% end %>
+		</small>
 	</div>
   </div>
 <% end %>
+
+<div class="clear"></div>
+
+<%= will_paginate @models %>
+
+
 </div>
 <!--
 <div class="block_full_width">

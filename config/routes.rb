@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  
+  map.devise_for :users
+
   map.resources :model_variable_values
 
   map.resources :models

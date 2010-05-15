@@ -11,15 +11,19 @@ class ModelFillDataController < ApplicationController
   
   def matrix
 
+    
 
     #require 'benchmark'
     
     raise "Please, set correct model_id!" if not Model.find(params[:id])
     
+    
 
     
     #Find our model
     model = Model.find(params[:id])
+    
+    authorize! :manage, model
     
     #Destroy old results  
     #@model.model_variable_values.destroy_all

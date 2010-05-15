@@ -8,6 +8,7 @@ class Matrix
 end
 
 class KnownValuesController < ApplicationController
+  load_and_authorize_resource
   
   def loadmanyvalues
      lines = File.readlines("/Users/aleksejleonov/ror/world/public/importers.csv")

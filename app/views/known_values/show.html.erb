@@ -1,8 +1,14 @@
+<%- content_for :title do -%>Variables<%- end -%>
+
 <div class="action_name"><h2><%=h @known_value.name %></h2>
+		
+		
 	<div class="actions">
 		<%= link_to 'Back', :back %> | 
-		<%= link_to 'List', known_values_path %> | 
-		<%= link_to 'Edit', edit_known_value_path(@known_value) %>
+		<%= link_to 'List', known_values_path %>
+		<% if user_signed_in? && current_user == @known_value.user %> | 
+			<%= link_to 'Edit', edit_known_value_path(@known_value) %>
+		<% end %>
 	</div>
 </div>
 
@@ -40,6 +46,14 @@
 	<div class="separator"></div>
 	<div class="container">
 		<%=h @known_value.source_name %>
+		
+		<p>Data uploded by
+		<% if @known_value.user == current_user %>
+			You.
+		<% else %>
+			<%=h @known_value.user.email.split(/\@/)[0] %>.
+		<% end %></p>
+		
 	</div>
 </div>
 <% end %>

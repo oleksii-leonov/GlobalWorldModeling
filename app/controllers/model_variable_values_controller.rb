@@ -1,4 +1,6 @@
 class ModelVariableValuesController < ApplicationController
+  load_and_authorize_resource
+  
   # GET /model_variable_values
   # GET /model_variable_values.xml
   def index

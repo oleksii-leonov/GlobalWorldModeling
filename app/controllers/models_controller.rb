@@ -1,8 +1,10 @@
 class ModelsController < ApplicationController
+  load_and_authorize_resource
+  
   # GET /models
   # GET /models.xml
   def index
-    @models = Model.all
+    @models = Model.paginate :page => params[:page]
   
       respond_to do |format|
       format.html # index.html.erb
@@ -44,7 +46,7 @@ class ModelsController < ApplicationController
   # POST /models.xml
   def create
     @model = Model.new(params[:model])
-
+    @model.user = current_user
     respond_to do |format|
       if @model.save
         flash[:notice] = 'Model was successfully created.'

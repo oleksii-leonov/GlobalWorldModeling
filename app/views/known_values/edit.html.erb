@@ -1,3 +1,5 @@
+<%- content_for :title do -%>Variables<%- end -%>
+
 <div class="action_name"><h2>Edit — <%=h @known_value.name %></h2>
 	<div class="actions">
 		<%= link_to 'Show', @known_value %> |
@@ -53,7 +55,7 @@
 		</table>		 
 	</div>
 </div>
-<!--
+
 <div class="block_full_width">
 	<h3>Formula, if You wish to calculate values</h3>
 	<div class="separator"></div>
@@ -76,7 +78,7 @@
 		</table>		 
 	</div>
 </div>
--->
+
 
 <div class="block_full_width">
 	<h3>Source of data</h3>

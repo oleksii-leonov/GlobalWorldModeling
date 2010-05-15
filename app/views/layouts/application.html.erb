@@ -1,0 +1,40 @@
+<%= render :partial => 'layouts/header', :locals => {:title => yield(:title).to_s} %>
+
+<div id="container">
+    <!-- верхнее меню-->
+    <ul class="menu">
+        <li class="l1"><a href="/models">Models</a></li>
+        <li class="l2"><a href="/countries">Countries</a></li>
+		<li class="l3"><a href="/known_values">Variables</a></li>
+    </ul>
+
+    <!-- .верхнее меню-->
+    <!-- основной блок с закругленными уголками-->
+    <div class="bubble">
+    	<!-- Блок для заголовка -->
+        <div class="rectangle <%=h yield(:title) %>">
+            <h2><%=h yield(:title) %></h2>
+        </div>
+        <div class="triangle-l <%=h yield(:title) %>_l"></div><!-- Левый уголок под заголовком -->
+        <!--<div class="triangle-r"></div>--><!-- Правый уголок под заголовком -->
+		<div id="user_nav">
+			<%- if user_signed_in? -%>
+				Signed in as <%= link_to current_user.email, edit_user_registration_path %>.
+				<%= link_to "Sign out", destroy_user_session_path %>
+			 <%- else -%>
+				If you want to create models — <%= link_to "Sign in", new_user_session_path %> or <%= link_to "sign up", new_user_registration_path %>.
+			<%- end -%>
+		</div>
+        <div class="info"><!-- Основной контент -->
+			<% flash.each do |name,msg| %>
+				 <%= content_tag :div, msg, :id => "flash_#{name}", :class => "flash" %>
+			<% end %>
+
+			<%= yield %>
+			
+        </div>
+    </div>
+    <!-- .основной блок с закругленными уголками-->
+</div>
+
+<%= render :partial => 'layouts/footer' %>

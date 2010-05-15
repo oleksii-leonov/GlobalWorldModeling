@@ -9,12 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100219103634) do
+ActiveRecord::Schema.define(:version => 20100515164909) do
 
   create_table "countries", :force => true do |t|
     t.string "name"
     t.string "name_ammap"
   end
+
+  add_index "countries", ["name"], :name => "index_countries_on_name", :unique => true
 
   create_table "countries_models", :id => false, :force => true do |t|
     t.integer "model_id"
@@ -37,12 +39,13 @@ ActiveRecord::Schema.define(:version => 20100219103634) do
   add_index "country_known_values", ["known_value_id"], :name => "known_value_id"
 
   create_table "known_values", :force => true do |t|
-    t.string "name"
-    t.string "name_short"
-    t.string "unit_measurement"
-    t.text   "description"
-    t.text   "fill_formula"
-    t.string "source_name"
+    t.string  "name"
+    t.string  "name_short"
+    t.string  "unit_measurement"
+    t.text    "description"
+    t.text    "fill_formula"
+    t.string  "source_name"
+    t.integer "user_id"
   end
 
   create_table "known_values_models", :id => false, :force => true do |t|
@@ -74,6 +77,30 @@ ActiveRecord::Schema.define(:version => 20100219103634) do
     t.string   "variables_map"
     t.string   "variables_chart"
     t.text     "description"
+    t.integer  "user_id"
   end
+
+  create_table "users", :force => true do |t|
+    t.string   "email",                               :default => "", :null => false
+    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
+    t.string   "password_salt",                       :default => "", :null => false
+    t.string   "reset_password_token"
+    t.string   "remember_token"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",                       :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.integer  "failed_attempts",                     :default => 0
+    t.string   "unlock_token"
+    t.datetime "locked_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+  add_index "users", ["unlock_token"], :name => "index_users_on_unlock_token", :unique => true
 
 end
